@@ -12,15 +12,19 @@ namespace TextRPG
         public string Stat { get; }
         public int Add_stat { get; }
         public string Ex { get; }
-        public int Price { get; }
+        public int Price { get; set; }
+        public bool Display_buy { get; set; }
+        public string Buy_comple { get;  set; }
 
-        public Shop(string name, string stat, int add_stat, string ex, int price)
+        public Shop(string name, string stat, int add_stat, string ex, int price, bool display_buy, string buy_comple)
         {
-            Name = name;  
-            Stat = stat;   
-            Add_stat = add_stat;    
+            Name = name;
+            Stat = stat;
+            Add_stat = add_stat;
             Ex = ex;
             Price = price;
+            Display_buy = display_buy;
+            Buy_comple = buy_comple;
         }
     }
 }
